@@ -15,4 +15,4 @@ script_text_df <- tibble(text=script_text)
 
 script_text_broken = script_text_df %>% unnest_tokens(word, text)
 
-write.csv(script_text_broken, file="natltreasure.csv")
+write.csv(script_text_broken, file="natltreasure.csv", row.names = FALSE)
